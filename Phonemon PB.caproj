@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>0.0.2.9</version>
+    <version>0.0.3.2</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -88,6 +88,10 @@
         <object-type name="Underground_Background" sid="1373541276130149">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Daniell Mesquita\Desktop\Underground_Background.png" />
+        </object-type>
+        <object-type name="Sky_Background" sid="3053657593354284">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Daniell Mesquita\Desktop\Sky_Background.png" />
         </object-type>
     </object-folder>
     <families />
