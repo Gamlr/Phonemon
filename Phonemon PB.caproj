@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>1.0.0.8</version>
+    <version>0.0.1.1</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -15,6 +15,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -36,7 +37,7 @@
         <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Custom</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -54,6 +55,19 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3331574032476122" speed="5">
                     <frame duration="1" hotspotX="0.508197" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\Player.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Land_Grass" sid="1713471521021416">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1906972501030991">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7920211523352052" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\Land_Grass.png" />
                 </animation>
             </animation-folder>
         </object-type>
