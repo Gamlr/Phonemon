@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>0.0.1.2</version>
+    <version>0.0.2.3</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -68,6 +68,19 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7920211523352052" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\Land_Grass.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Land_Earth" sid="6648589317511333">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5472883357717097">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3800199160066345" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\Land_Earth.png" />
                 </animation>
             </animation-folder>
         </object-type>
