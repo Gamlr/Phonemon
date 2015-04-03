@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>0.0.6.2</version>
+    <version>0.0.8.5</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -10,7 +10,10 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>20000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -32,6 +35,7 @@
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
@@ -39,7 +43,7 @@
         <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
-        <prop name="Preview browser">Custom</prop>
+        <prop name="Preview browser">Internet Explorer</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -219,15 +223,29 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="JoinButton" sid="4950556465914145">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="NameTextBox" sid="2157098647208313">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="FormLabel" sid="2416015277442644">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PasswordTextBox" sid="4206380418312071">
+            <plugin id="TextBox" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>Logo.xml</layout>
+        <layout>Login.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Logo sheet.xml</event-sheet>
+        <event-sheet>Login sheet.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
