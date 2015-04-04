@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>0.1.0.4</version>
+    <version>0.1.0.8</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -45,7 +45,7 @@
         <prop name="Orientations">Landscape</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
-        <prop name="Preview browser">Internet Explorer</prop>
+        <prop name="Preview browser">(default)</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -95,10 +95,6 @@
         <object-type name="Underground_Background" sid="1373541276130149">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Daniell Mesquita\Desktop\Underground_Background.png" />
-        </object-type>
-        <object-type name="Sky_Background" sid="3053657593354284">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Daniell Mesquita\Desktop\Sky_Background.png" />
         </object-type>
         <object-type name="L" sid="9361618389421209">
             <plugin id="Sprite" />
@@ -242,6 +238,14 @@
         </object-type>
         <object-type name="Clock" sid="7366329576186464">
             <plugin id="Clock" />
+        </object-type>
+        <object-type name="Sky_Background" sid="3599302492142127">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9583124071018269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\Sky_Background.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

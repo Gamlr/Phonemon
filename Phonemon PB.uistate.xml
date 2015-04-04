@@ -36,5 +36,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/A/" />
         <folder expanded="1" path="animation-folder/G/" />
         <folder expanded="1" path="animation-folder/M/" />
+        <folder expanded="1" path="animation-folder/Sky_Background/" />
     </folders-expanded>
 </c2uistate>
