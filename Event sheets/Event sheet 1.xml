@@ -68,6 +68,10 @@
                             <param id="0" name="Variable">Hour</param>
                             <param id="1" name="Value">str(Clock.hour - 12)</param>
                         </action>
+                        <action id="4" name="Set animation" sid="9618513882499103" type="Sky_Background">
+                            <param id="0" name="Animation">&quot;DarkNight&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7397029291941244">
