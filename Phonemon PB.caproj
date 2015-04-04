@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>0.1.0.8</version>
+    <version>0.1.1.0</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -244,6 +244,12 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9583124071018269" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\Sky_Background.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="DarkNight" pingpong="0" repeatcount="1" repeatto="0" sid="6742661993489716" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\DarkNight.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Starting_Meridian" pingpong="0" repeatcount="1" repeatto="0" sid="9241076020519674" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\StartNight-Day.png" />
                 </animation>
             </animation-folder>
         </object-type>
