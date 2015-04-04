@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>0.0.8.6</version>
+    <version>0.0.8.7</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
+        <plugin author="Yarfapet" id="Clock" version="1">Clock</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
@@ -239,6 +240,9 @@
         <object-type name="WebSocket" sid="3198256422487366">
             <plugin id="C2WebSocket" />
         </object-type>
+        <object-type name="Clock" sid="7366329576186464">
+            <plugin id="Clock" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -253,6 +257,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="WebSocket" uid="17" />
+        <global-instance type="Clock" uid="18" />
     </global-instances>
     <sounds-folder />
     <music-folder />
