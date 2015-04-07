@@ -55,30 +55,6 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="JoinButton" uid="14">
-                    <properties>
-                        <type>Button</type>
-                        <text>Join</text>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>No</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>316</x>
-                        <y>142</y>
-                        <z>0</z>
-                        <width>126</width>
-                        <height>110</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
                 <instance type="PasswordTextBox" uid="15">
                     <properties>
                         <text></text>
@@ -174,6 +150,30 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="JoinButton" uid="14">
+                    <properties>
+                        <type>Button</type>
+                        <text>Join</text>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>No</enabled>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                        <checked>No</checked>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>316</x>
+                        <y>142</y>
+                        <z>0</z>
+                        <width>126</width>
+                        <height>110</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                     </world>
                 </instance>
             </instances>
