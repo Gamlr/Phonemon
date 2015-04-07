@@ -57,10 +57,19 @@
                             <param id="0" name="Text">&quot;&quot;</param>
                             <param id="1" name="Case">0</param>
                         </condition>
+                        <condition id="12" name="Supports multiplayer" sid="8561479163819519" type="Multiplayer" />
                     </conditions>
                     <actions />
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="8803234491116875">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8159959298024984" type="Keyboard">
+                    <param id="0" name="Key">20 (Caps Lock)</param>
+                </condition>
+            </conditions>
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
