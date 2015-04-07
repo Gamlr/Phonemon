@@ -2,5 +2,16 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Login sheet</name>
-    <events />
+    <events>
+        <event-block sid="6668314736224439">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="107806677998696" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="811277980173914" type="Version">
+                    <param id="0" name="Text">&quot;Version &quot;&amp; projectversion</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

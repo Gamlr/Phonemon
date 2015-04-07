@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>0.1.1.1</version>
+    <version>0.1.2.2</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -252,6 +252,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\StartNight-Day.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Version" sid="1861996676368284">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
