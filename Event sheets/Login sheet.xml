@@ -63,13 +63,5 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="8803234491116875">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="8159959298024984" type="Keyboard">
-                    <param id="0" name="Key">20 (Caps Lock)</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
     </events>
 </c2eventsheet>

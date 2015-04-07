@@ -42,5 +42,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/User_Label/" />
         <folder expanded="1" path="animation-folder/Password_Label/" />
         <folder expanded="1" path="animation-folder/Capslock_Label/" />
+        <folder expanded="1" path="animation-folder/Login_Background/" />
     </folders-expanded>
 </c2uistate>
