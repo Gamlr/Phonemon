@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>0.1.2.3</version>
+    <version>0.1.2.8</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -228,9 +228,6 @@
         <object-type name="NameTextBox" sid="2157098647208313">
             <plugin id="TextBox" />
         </object-type>
-        <object-type name="FormLabel" sid="2416015277442644">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="PasswordTextBox" sid="4206380418312071">
             <plugin id="TextBox" />
         </object-type>
@@ -259,6 +256,22 @@
         </object-type>
         <object-type name="Touch" sid="3515226266730187">
             <plugin id="Touch" />
+        </object-type>
+        <object-type name="User_Label" sid="6374046542613386">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5190864820994645" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\User_Label.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Password_Label" sid="4350953764776798">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5725589161237765" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\Password_Label.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
