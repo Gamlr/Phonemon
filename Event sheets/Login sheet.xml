@@ -45,11 +45,23 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block any="1" sid="9761892217624511">
+        <event-block sid="9761892217624511">
             <conditions>
                 <condition id="0" name="On clicked" sid="9606197141655439" type="JoinButton" />
+                <condition id="0" name="Compare text" sid="4087598701010954" type="NameTextBox">
+                    <param id="0" name="Text">&quot;BetaTester&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
+                <condition id="0" name="Compare text" sid="1425106646730889" type="PasswordTextBox">
+                    <param id="0" name="Text">&quot;testing&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-2" name="Go to layout" sid="4944304204772123" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="6370082896024808">
                     <conditions>
