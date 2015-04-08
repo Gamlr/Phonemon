@@ -16,13 +16,13 @@
         </event-block>
         <event-block sid="540655972634728">
             <conditions>
-                <condition id="1" name="On text changed" sid="3764496821714143" type="NameTextBox" />
+                <condition id="1" name="On text changed" sid="3764496821714143" type="PasswordTextBox" />
             </conditions>
             <actions />
             <sub-events>
                 <event-block sid="8371401617514328">
                     <conditions>
-                        <condition id="0" name="Compare text" sid="1072065226886249" type="NameTextBox">
+                        <condition id="0" name="Compare text" sid="1072065226886249" type="PasswordTextBox">
                             <param id="0" name="Text">&quot;&quot;</param>
                             <param id="1" name="Case">0</param>
                         </condition>
@@ -53,7 +53,7 @@
             <sub-events>
                 <event-block sid="6370082896024808">
                     <conditions>
-                        <condition id="0" inverted="1" name="Compare text" sid="8068555886947017" type="NameTextBox">
+                        <condition id="0" inverted="1" name="Compare text" sid="8068555886947017" type="PasswordTextBox">
                             <param id="0" name="Text">&quot;&quot;</param>
                             <param id="1" name="Case">0</param>
                         </condition>
