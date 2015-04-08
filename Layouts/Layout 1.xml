@@ -222,7 +222,7 @@
             <instances>
                 <instance type="BuildWatermark" uid="25">
                     <properties>
-                        <text>Build 0179</text>
+                        <text>Build 0181</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>255,255,255</color>

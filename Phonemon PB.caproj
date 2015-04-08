@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Phonemon PB</name>
-    <description></description>
-    <version>0.1.7.9</version>
+    <description>Capture battle creatures around world</description>
+    <version>0.1.8.2</version>
     <author>Daniell Mesquita</author>
-    <author-email></author-email>
+    <author-email>daniellplasma@gmail.com</author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
     <app-id>com.gamlr.phonemonpb</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
