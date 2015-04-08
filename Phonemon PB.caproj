@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description></description>
-    <version>0.1.7.0</version>
+    <version>0.1.7.9</version>
     <author>Daniell Mesquita</author>
     <author-email></author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -298,6 +298,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Daniell Mesquita\Desktop\Login_Background.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="BuildWatermark" sid="1679138983174109">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
