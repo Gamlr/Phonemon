@@ -48,30 +48,46 @@
         <event-block sid="9761892217624511">
             <conditions>
                 <condition id="0" name="On clicked" sid="9606197141655439" type="JoinButton" />
-                <condition id="0" name="Compare text" sid="4087598701010954" type="NameTextBox">
-                    <param id="0" name="Text">&quot;BetaTester&quot;</param>
-                    <param id="1" name="Case">0</param>
-                </condition>
-                <condition id="0" name="Compare text" sid="1425106646730889" type="PasswordTextBox">
-                    <param id="0" name="Text">&quot;testing&quot;</param>
-                    <param id="1" name="Case">0</param>
-                </condition>
             </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="4944304204772123" type="System">
-                    <param id="0" name="Layout">Layout 1</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
-                <event-block sid="6370082896024808">
+                <event-block sid="6913784300171195">
                     <conditions>
-                        <condition id="0" inverted="1" name="Compare text" sid="8068555886947017" type="PasswordTextBox">
+                        <condition id="0" name="Compare text" sid="9902423626685587" type="NameTextBox">
+                            <param id="0" name="Text">&quot;BetaTester&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                        <condition id="0" name="Compare text" sid="5309609817183547" type="PasswordTextBox">
+                            <param id="0" name="Text">&quot;testing&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                        <condition id="0" inverted="1" name="Compare text" sid="7029806496237871" type="PasswordTextBox">
                             <param id="0" name="Text">&quot;&quot;</param>
                             <param id="1" name="Case">0</param>
                         </condition>
-                        <condition id="12" name="Supports multiplayer" sid="8561479163819519" type="Multiplayer" />
+                        <condition id="12" name="Supports multiplayer" sid="9291579751069533" type="Multiplayer" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="4944304204772123" type="System">
+                            <param id="0" name="Layout">Layout 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7457062354035466">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="885229482022907" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1600145878299535" type="Capslock_Label">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="3" name="Set visible" sid="3239481316699775" type="Capslock">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5602673804845336" type="Capslock">
+                            <param id="0" name="Text">&quot;Wrong username/password&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
