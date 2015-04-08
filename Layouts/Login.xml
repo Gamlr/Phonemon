@@ -174,7 +174,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Capslock" uid="22">
+                <instance type="Warn_Field" uid="22">
                     <properties>
                         <text>Capslock is activated!</text>
                         <placeholder></placeholder>
@@ -224,7 +224,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="Capslock_Label" uid="23">
+                <instance type="Warn_Label" uid="23">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>

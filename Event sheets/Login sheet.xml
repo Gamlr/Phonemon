@@ -78,13 +78,13 @@
                         <condition id="-22" name="Else" sid="885229482022907" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="1600145878299535" type="Capslock_Label">
+                        <action id="-15" name="Set visible" sid="1600145878299535" type="Warn_Label">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="3" name="Set visible" sid="3239481316699775" type="Capslock">
+                        <action id="3" name="Set visible" sid="3239481316699775" type="Warn_Field">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="0" name="Set text" sid="5602673804845336" type="Capslock">
+                        <action id="0" name="Set text" sid="5602673804845336" type="Warn_Field">
                             <param id="0" name="Text">&quot;Wrong username/password&quot;</param>
                         </action>
                     </actions>

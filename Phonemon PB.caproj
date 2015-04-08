@@ -2,7 +2,7 @@
 <c2project>
     <name>Phonemon PB</name>
     <description>Capture battle creatures around world</description>
-    <version>0.2.0.0</version>
+    <version>0.2.0.2</version>
     <author>Daniell Mesquita</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website>http://gamlr.plasmmer.com/phonemon</author-website>
@@ -280,10 +280,10 @@
         <object-type name="Text" sid="278848859208613">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Capslock" sid="8933881604372674">
+        <object-type name="Warn_Field" sid="8933881604372674">
             <plugin id="TextBox" />
         </object-type>
-        <object-type name="Capslock_Label" sid="6751829081356465">
+        <object-type name="Warn_Label" sid="6751829081356465">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5331952789787723" speed="5">
