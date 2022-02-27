@@ -6,22 +6,22 @@
         <variable constant="0" name="Hour" sid="7507761213690028" static="0" type="text">12</variable>
         <variable constant="0" name="Minute" sid="3947365989446204" static="0" type="text">00</variable>
         <variable constant="0" name="Meridian" sid="9692558729377058" static="0" type="text">AM</variable>
-        <event-block sid="7182610930541029">
+        <event-block disabled="1" sid="7182610930541029">
             <conditions>
                 <condition id="-1" name="Every tick" sid="5633626807861059" type="System" />
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="1763717088118192" type="System">
+                <action disabled="1" id="-9" name="Set value" sid="1763717088118192" type="System">
                     <param id="0" name="Variable">Hour</param>
                     <param id="1" name="Value">Clock.hour</param>
                 </action>
-                <action id="-9" name="Set value" sid="4634871715275238" type="System">
+                <action disabled="1" id="-9" name="Set value" sid="4634871715275238" type="System">
                     <param id="0" name="Variable">Hour</param>
                     <param id="1" name="Value">str(Clock.hour)</param>
                 </action>
             </actions>
             <sub-events>
-                <event-block sid="4751999068892133">
+                <event-block disabled="1" sid="4751999068892133">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="1751779708323896" type="System">
                             <param id="0" name="First value">Clock.hour</param>
@@ -36,7 +36,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="1479711011461085">
+                <event-block disabled="1" sid="1479711011461085">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="4352531651521254" type="System">
                             <param id="0" name="First value">Clock.hour</param>
@@ -51,7 +51,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="4226946165280609">
+                <event-block disabled="1" sid="4226946165280609">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="8867036372784431" type="System">
                             <param id="0" name="First value">Clock.hour</param>
@@ -74,7 +74,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="7397029291941244">
+                <event-block disabled="1" sid="7397029291941244">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="5132171038291034" type="System">
                             <param id="0" name="First value">Clock.minute</param>
@@ -89,7 +89,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="9697115272966445">
+                <event-block disabled="1" sid="9697115272966445">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="5734027117159105" type="System">
                             <param id="0" name="First value">Clock.minute</param>
