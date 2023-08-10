@@ -1,0 +1,112 @@
+This folder: /media/daniella/B/git/Gamlr/2013-2015 phonemon
+
+  File: ./Animations
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 4055456     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-16 13:32:37.800306100 -0300
+Modify: 2020-12-31 02:58:50.134010000 -0300
+Change: 2022-03-04 20:46:19.052637200 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./c2export
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 1102801     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-16 13:32:37.855810100 -0300
+Modify: 2022-12-12 16:52:56.334387500 -0300
+Change: 2022-12-12 16:52:56.334387500 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Event sheets
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 4055503     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-16 13:32:37.902608500 -0300
+Modify: 2022-12-12 17:36:04.413861000 -0300
+Change: 2022-12-12 17:36:04.413861000 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Files
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 4055510     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-16 13:32:37.916917400 -0300
+Modify: 2020-12-31 02:58:50.633998000 -0300
+Change: 2022-03-04 20:46:19.248980700 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Layouts
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 4055517     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-16 13:32:37.927438600 -0300
+Modify: 2022-12-12 17:36:04.403000400 -0300
+Change: 2022-12-12 17:36:04.403000400 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./MayneedMerge -> /home/daniella/Desktop/Old desktops/Old Windows from 2017/Users/Plasmmer/Desktop/Users/Gamzlr/Desktop/Soon/phonemon
+  Size: 115       	Blocks: 1          IO Block: 4096   symbolic link
+Device: 8,20	Inode: 3097214     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-06-28 17:43:37.302524800 -0300
+Modify: 2023-06-28 17:43:37.302524800 -0300
+Change: 2023-06-28 17:43:37.302524800 -0300
+ Birth: -
+IPFS hash: QmRgoZQCz6E7xr61TpFCfMRw5tKjSvsyZhdcjLQWtoiiGz
+------------------------------
+  File: ./Phonemon PB.caproj
+  Size: 18233     	Blocks: 40         IO Block: 4096   regular file
+Device: 8,20	Inode: 1104410     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2022-12-12 17:39:16.992109000 -0300
+Modify: 2022-12-12 17:36:04.344338200 -0300
+Change: 2022-12-12 17:36:04.365730000 -0300
+ Birth: -
+IPFS hash: QmXMCRc83pcVmNdagEeQJ5GkrLhwue2suwRkCQzna8PxUP
+------------------------------
+  File: ./Phonemon PB.uistate.xml
+  Size: 2486      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 1104408     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-04-07 03:10:46.843625200 -0300
+Modify: 2022-12-12 17:36:03.997554600 -0300
+Change: 2022-12-12 17:36:04.311234700 -0300
+ Birth: -
+IPFS hash: Qmc4NbcPpKr4GwRQR7t8wjZsUNnf5UuLWUvoisuKJJ8MZV
+------------------------------
+  File: ./Tasks.txt
+  Size: 1526      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 3143450     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-01-24 17:16:45.466084400 -0300
+Modify: 2023-01-24 17:16:15.151027400 -0300
+Change: 2023-01-24 17:16:15.476712300 -0300
+ Birth: -
+IPFS hash: QmaWbTF3jZFeQwzjRGquZfsunfifo9wexNedX78qZDv65i
+------------------------------
+  File: ./Textures
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 4055525     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-16 13:32:37.929437700 -0300
+Modify: 2020-12-31 02:58:51.165235000 -0300
+Change: 2022-03-04 20:46:19.453809100 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Use
+  Size: 0         	Blocks: 0          IO Block: 4096   directory
+Device: 8,20	Inode: 1544110     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-07-16 13:32:37.930437800 -0300
+Modify: 2023-01-28 15:55:48.838422400 -0300
+Change: 2023-01-28 15:55:48.838422400 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
