@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Logo sheet</name>
+    <events>
+        <event-block sid="158335322967462">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5267544204471523" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7667578025915368" type="Audio">
+                    <param id="0" name="Audio file">Gamlr_G</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5070074875291534" type="A">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2880126434562077" type="M">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1551062092676508" type="L">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1236062547638384" type="R">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="5224852931058998" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="4903876772485832" type="Audio">
+                    <param id="0" name="Audio file">Gamlr_G</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="1371387601270958" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="6533836760432795" type="Audio">
+                    <param id="0" name="Audio file">Gamlr_G</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="3184528472922015" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="2749748677474685" type="Audio">
+                    <param id="0" name="Audio file">Gamlr_G</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="431425036541448">
+            <conditions>
+                <condition id="4" name="On finished" sid="268781682059377" type="G">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9116158921472348" type="Audio">
+                    <param id="0" name="Audio file">Beat</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="8257074872340303" type="G">
+                    <param id="0" name="Animation">&quot;Guttye&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="2892895833876205" type="G">
+                    <param id="0" name="X">145</param>
+                </action>
+                <action id="-16" name="Wait" sid="2022343684971753" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="6680416299253782" type="Audio">
+                    <param id="0" name="Audio file">Beat</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1788151919558064" type="A">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="7427058990811225" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="3661218219251644" type="Audio">
+                    <param id="0" name="Audio file">Beat</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9356822046710535" type="M">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="3877951982236174" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="6896815526754578" type="Audio">
+                    <param id="0" name="Audio file">Beat</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6463212028902151" type="L">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="1394348452819263" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="9404701567034867" type="Audio">
+                    <param id="0" name="Audio file">Beat</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2173593190120872" type="R">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="1488655465959746" type="Audio">
+                    <param id="0" name="Audio file">Gamlr</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="1078509780728945" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-43" name="Go to next/previous layout" sid="1466067720810563" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3439938245787295">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="9330482794379018" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="144324939990528" type="Audio">
+                    <param id="0" name="Audio file">Touch</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-43" name="Go to next/previous layout" sid="2404769857388061" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

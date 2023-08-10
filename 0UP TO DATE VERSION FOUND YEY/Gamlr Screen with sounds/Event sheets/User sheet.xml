@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>User sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="7245191036896955">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8428372180827706" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3986134513561431" type="System">
+                    <param id="0" name="Variable">Current_Layout</param>
+                    <param id="1" name="Value">LayoutName</param>
+                </action>
+                <action id="0" name="Set text" sid="2490397365463514" type="HeadingTxt">
+                    <param id="0" name="Text">Webstorage.localvalue(&quot;Username&quot;) &amp; &quot; - Options&quot;</param>
+                </action>
+                <action id="6" name="Set focused" sid="3530980927443028" type="Password_Box" />
+                <action id="0" name="Set text" sid="8803549145020386" type="Signup">
+                    <param id="0" name="Text">&quot;Change Password&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6006636595426416">
+            <conditions>
+                <condition id="0" name="On function" sid="8387259165344012" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set placeholder" sid="7764103909530733" type="Password_Box">
+                    <param id="0" name="Placeholder">f.Call(&quot;getText&quot;, &quot;password&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="540655972634728">
+            <conditions>
+                <condition id="1" name="On text changed" sid="3764496821714143" type="Password_Box" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6869736645479976">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="3744156064955844" type="Password_Box">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4416103148385015" type="Signup_Button">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="767846565229703" type="Signup">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9896949583459472">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9004281453115152" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="2081167123196591" type="Signup_Button">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="704984536855778" type="Signup">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9761892217624511">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9606197141655439" type="Touch">
+                    <param id="0" name="Object">Signup_Button</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="5336382355733915" type="Signup_Button" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7617335997325782" type="arrowleft" />
+                <action id="0" name="Set local value" sid="5957056944304659" type="WebStorage">
+                    <param id="0" name="Key">&quot;Password&quot;</param>
+                    <param id="1" name="Value">Password_Box.Text</param>
+                </action>
+                <action id="0" name="Play" sid="5362209144881462" type="Audio">
+                    <param id="0" name="Audio file">Warning</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-24" name="Move to top" sid="3430044386342861" type="Warn_Box" />
+                <action id="-2" name="Set Y" sid="300894366495749" type="Warn_Box">
+                    <param id="0" name="Y">170</param>
+                </action>
+                <action id="0" name="Set text" sid="578951554862094" type="Warn_Text">
+                    <param id="0" name="Text">&quot;Your password has been successfully changed! Please re-login.&quot;</param>
+                </action>
+                <action id="-24" name="Move to top" sid="380561244570938" type="Warn_Text" />
+                <action id="-2" name="Set Y" sid="8831627441199596" type="Warn_Text">
+                    <param id="0" name="Y">0</param>
+                </action>
+                <action id="-24" name="Move to top" sid="7316047328527132" type="Close_Warn" />
+                <action id="-2" name="Set Y" sid="8913957828903658" type="Close_Warn">
+                    <param id="0" name="Y">171</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="483999636952475">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7719914241494885" type="Touch">
+                    <param id="0" name="Object">Close_Warn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="6041303767692442" type="Warn_Box">
+                    <param id="0" name="Y">516</param>
+                </action>
+                <action id="-2" name="Set Y" sid="8792058804165514" type="Warn_Text">
+                    <param id="0" name="Y">346</param>
+                </action>
+                <action id="-2" name="Set Y" sid="8995608551692256" type="Close_Warn">
+                    <param id="0" name="Y">516</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9801740085730299" type="System">
+                    <param id="0" name="Layout">Login</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

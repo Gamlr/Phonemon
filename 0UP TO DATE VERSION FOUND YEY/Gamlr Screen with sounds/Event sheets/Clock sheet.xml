@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Clock sheet</name>
+    <events>
+        <variable constant="0" name="Hour" sid="7507761213690028" static="0" type="text">12</variable>
+        <variable constant="0" name="Minute" sid="3947365989446204" static="0" type="text">00</variable>
+        <variable constant="0" name="Seconds" sid="1304039471073779" static="0" type="text">00</variable>
+        <variable constant="0" name="Meridian" sid="9692558729377058" static="0" type="text">AM</variable>
+        <event-block sid="7182610930541029">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5633626807861059" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1763717088118192" type="System">
+                    <param id="0" name="Variable">Hour</param>
+                    <param id="1" name="Value">Clock.hour</param>
+                </action>
+                <action id="-9" name="Set value" sid="4634871715275238" type="System">
+                    <param id="0" name="Variable">Hour</param>
+                    <param id="1" name="Value">str(Clock.hour)</param>
+                </action>
+                <action id="-9" name="Set value" sid="8886060789091077" type="System">
+                    <param id="0" name="Variable">Battery</param>
+                    <param id="1" name="Value">round(Browser.BatteryLevel * 100)</param>
+                </action>
+                <action id="3" name="Set progress" sid="3013709738948897" type="Battery_Status">
+                    <param id="0" name="Value">Battery</param>
+                </action>
+                <action id="0" name="Set text" sid="4162677488023567" type="Hour">
+                    <param id="0" name="Text">Hour &amp; &quot;:&quot; &amp; Minute &amp; &quot;:&quot; &amp; Seconds &amp; &quot; &quot; &amp; Meridian</param>
+                </action>
+                <action id="0" name="Set text" sid="4980398744097394" type="eMoneys">
+                    <param id="0" name="Text">&quot;eMoneys= &quot;&amp;Webstorage.localvalue(&quot;eMoneys&quot;)</param>
+                </action>
+                <action id="0" name="Set local value" sid="2926571283497062" type="WebStorage">
+                    <param id="0" name="Key">&quot;eMoneys&quot;</param>
+                    <param id="1" name="Value">eMoneys</param>
+                </action>
+                <action disabled="1" id="0" name="Set text" sid="8120378808273015" type="HeadingTxt">
+                    <param id="0" name="Text">ajax.Progress &amp; &quot; | &quot; &amp; ajax.LastData</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4751999068892133">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1751779708323896" type="System">
+                            <param id="0" name="First value">Clock.hour</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6887860969369636" type="System">
+                            <param id="0" name="Variable">Meridian</param>
+                            <param id="1" name="Value">&quot;AM&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1479711011461085">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4352531651521254" type="System">
+                            <param id="0" name="First value">Clock.hour</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1035461307219307" type="System">
+                            <param id="0" name="Variable">Meridian</param>
+                            <param id="1" name="Value">&quot;PM&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4226946165280609">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8867036372784431" type="System">
+                            <param id="0" name="First value">Clock.hour</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4121446163922395" type="System">
+                            <param id="0" name="Variable">Meridian</param>
+                            <param id="1" name="Value">&quot;PM&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8324180480246513" type="System">
+                            <param id="0" name="Variable">Hour</param>
+                            <param id="1" name="Value">str(Clock.hour - 12)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7397029291941244">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5132171038291034" type="System">
+                            <param id="0" name="First value">Clock.minute</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3973374556780581" type="System">
+                            <param id="0" name="Variable">Minute</param>
+                            <param id="1" name="Value">&quot;0&quot; &amp; str(Clock.minute)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9697115272966445">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5734027117159105" type="System">
+                            <param id="0" name="First value">Clock.minute</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="950768850046041" type="System">
+                            <param id="0" name="Variable">Minute</param>
+                            <param id="1" name="Value">str(Clock.minute)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6194864869426545">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="1030758064965002" type="System">
+                            <param id="0" name="First value">Clock.second</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5079179084065382" type="System">
+                            <param id="0" name="Variable">Seconds</param>
+                            <param id="1" name="Value">&quot;0&quot; &amp; str(Clock.second)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6001495639487579">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2453187812144053" type="System">
+                            <param id="0" name="First value">Clock.second</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5408394826409942" type="System">
+                            <param id="0" name="Variable">Seconds</param>
+                            <param id="1" name="Value">str(Clock.second)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="8000468641795652">
+                    <conditions>
+                        <condition id="1" name="Is online" sid="9089272636369844" type="Browser" />
+                        <condition id="3" name="On went online" sid="8714402898592017" type="Browser" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3589791233038434" type="Network_Icon">
+                            <param id="0" name="Animation">&quot;Online&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="7899593333752997">
+                    <conditions>
+                        <condition id="1" inverted="1" name="Is online" sid="288329042705014" type="Browser" />
+                        <condition id="4" name="On went offline" sid="5102872718424656" type="Browser" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="22721233051585" type="Network_Icon">
+                            <param id="0" name="Animation">&quot;Offline&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8831269928245347">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2598767202553955" type="System">
+                                    <param id="0" name="Variable">Current_Layout</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;Smartphone&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="2676057479656746" type="System">
+                                    <param id="0" name="Layout">Smartphone</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

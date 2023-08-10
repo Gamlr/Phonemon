@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Gender sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="5641348583870563">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1733011126977737" type="Touch">
+                    <param id="0" name="Object">Boy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="5585992993013303" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Set local value" sid="1899017464694049" type="WebStorage">
+                    <param id="0" name="Key">&quot;Player_Gender&quot;</param>
+                    <param id="1" name="Value">&quot;Boy&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="8484668065179235" type="boy_or_girl">
+                    <param id="0" name="Text">&quot;You have selected to be a boy. Are you sure?&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="7929446518916748" type="Yes">
+                    <param id="0" name="Y">232</param>
+                </action>
+                <action id="-2" name="Set Y" sid="3175388267646853" type="No">
+                    <param id="0" name="Y">300</param>
+                </action>
+                <action id="-3" name="Set position" sid="9057348035253682" type="Girl_Text">
+                    <param id="0" name="X">257</param>
+                    <param id="1" name="Y">372</param>
+                </action>
+                <action id="-3" name="Set position" sid="6888092609792984" type="Girl">
+                    <param id="0" name="X">314</param>
+                    <param id="1" name="Y">428</param>
+                </action>
+                <action id="-3" name="Set position" sid="4083746233306114" type="Boy_Text">
+                    <param id="0" name="X">248</param>
+                    <param id="1" name="Y">71</param>
+                </action>
+                <action id="-3" name="Set position" sid="1998154693009914" type="Boy">
+                    <param id="0" name="X">305</param>
+                    <param id="1" name="Y">127</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2364549028684188">
+            <conditions>
+                <condition id="3" name="On touched object" sid="738757783559478" type="Touch">
+                    <param id="0" name="Object">Girl</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="2747391230256878" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Set local value" sid="1307292514525649" type="WebStorage">
+                    <param id="0" name="Key">&quot;Player_Gender&quot;</param>
+                    <param id="1" name="Value">&quot;Girl&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="3998423457148132" type="boy_or_girl">
+                    <param id="0" name="Text">&quot;You have selected to be a girl. Are you sure?&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="9027894657589124" type="Yes">
+                    <param id="0" name="Y">232</param>
+                </action>
+                <action id="-2" name="Set Y" sid="4045614263309462" type="No">
+                    <param id="0" name="Y">300</param>
+                </action>
+                <action id="-3" name="Set position" sid="8152981855509797" type="Boy_Text">
+                    <param id="0" name="X">257</param>
+                    <param id="1" name="Y">372</param>
+                </action>
+                <action id="-3" name="Set position" sid="4476888456075306" type="Boy">
+                    <param id="0" name="X">314</param>
+                    <param id="1" name="Y">428</param>
+                </action>
+                <action id="-3" name="Set position" sid="7252603795378135" type="Girl_Text">
+                    <param id="0" name="X">248</param>
+                    <param id="1" name="Y">71</param>
+                </action>
+                <action id="-3" name="Set position" sid="2954197109298002" type="Girl">
+                    <param id="0" name="X">305</param>
+                    <param id="1" name="Y">127</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4794268244838686">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8354853043061288" type="Touch">
+                    <param id="0" name="Object">Yes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="2387158903494926" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6194500787556756">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1021715763361316" type="Touch">
+                    <param id="0" name="Object">No</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="3510667458429326" type="Yes">
+                    <param id="0" name="Y">584</param>
+                </action>
+                <action id="-2" name="Set Y" sid="7453041534449941" type="No">
+                    <param id="0" name="Y">652</param>
+                </action>
+                <action id="0" name="Set text" sid="310084042079333" type="boy_or_girl">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;boy_or_girl&quot;)</param>
+                </action>
+                <action id="-3" name="Set position" sid="4166403934397783" type="Girl_Text">
+                    <param id="0" name="X">304</param>
+                    <param id="1" name="Y">131</param>
+                </action>
+                <action id="-3" name="Set position" sid="1164485707560681" type="Girl">
+                    <param id="0" name="X">361</param>
+                    <param id="1" name="Y">187</param>
+                </action>
+                <action id="-3" name="Set position" sid="8271929606906421" type="Boy_Text">
+                    <param id="0" name="X">179</param>
+                    <param id="1" name="Y">131</param>
+                </action>
+                <action id="-3" name="Set position" sid="7672653753318286" type="Boy">
+                    <param id="0" name="X">236</param>
+                    <param id="1" name="Y">187</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4392317408266375">
+            <conditions>
+                <condition id="0" name="On function" sid="2054126561556486" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5530116475122261" type="boy_or_girl">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;boy_or_girl&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="8563027251333304" type="Girl_Text">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;girl&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="6464443324596876" type="Boy_Text">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;boy&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

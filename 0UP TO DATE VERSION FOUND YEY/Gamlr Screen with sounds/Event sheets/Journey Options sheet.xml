@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Journey Options sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-group description="" sid="306402906365074" title="Buttons">
+            <sub-events>
+                <event-block disabled="1" sid="8492543116177644">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="1578739431429653" type="Touch">
+                            <param id="0" name="Object">Co_Online_Button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="6233902924833114" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="4206187657451841" type="WebStorage">
+                            <param id="0" name="Key">&quot;Game_Mode&quot;</param>
+                            <param id="1" name="Value">&quot;Online&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6248996885900839" type="choose_mode">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5490948247584026" type="choose_mode">
+                            <param id="0" name="Text">&quot;Are you sure to choose &apos;Co-Op Online&apos; mode?&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="9508030187628491" type="Yes">
+                            <param id="0" name="Y">232</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="4654950440745165" type="No">
+                            <param id="0" name="Y">300</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="7505954231925456" type="Co_Online_Button">
+                            <param id="0" name="X">278</param>
+                            <param id="1" name="Y">422</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="2440801417936534" type="Co_NPC_Button">
+                            <param id="0" name="X">278</param>
+                            <param id="1" name="Y">422</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="8845443514687501" type="Single_Mode_Button">
+                            <param id="0" name="X">278</param>
+                            <param id="1" name="Y">422</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1666337784019725">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="3583899042180634" type="Touch">
+                            <param id="0" name="Object">Co_NPC_Button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="3705904834366486" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="2461355829458131" type="WebStorage">
+                            <param id="0" name="Key">&quot;Game_Mode&quot;</param>
+                            <param id="1" name="Value">&quot;NPC&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2472718311816029" type="choose_mode">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2578168363004801" type="choose_mode">
+                            <param id="0" name="Text">&quot;Are you sure to choose &apos;Co-Op with NPCs&apos; mode?&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="478564369065953" type="Yes">
+                            <param id="0" name="Y">232</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="1311370599620295" type="No">
+                            <param id="0" name="Y">300</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="9017500144398156" type="Co_Online_Button">
+                            <param id="0" name="X">278</param>
+                            <param id="1" name="Y">422</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="5598627666224221" type="Co_NPC_Button">
+                            <param id="0" name="X">278</param>
+                            <param id="1" name="Y">422</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="3773597573533291" type="Single_Mode_Button">
+                            <param id="0" name="X">278</param>
+                            <param id="1" name="Y">422</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9630870583222757">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="6322765764858284" type="Touch">
+                            <param id="0" name="Object">Single_Mode_Button</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="2587313463290342" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="2095711121187152" type="WebStorage">
+                            <param id="0" name="Key">&quot;Game_Mode&quot;</param>
+                            <param id="1" name="Value">&quot;Single&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1538546913750059" type="choose_mode">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5438710185098359" type="choose_mode">
+                            <param id="0" name="Text">&quot;Are you sure to choose &apos;Single&apos; mode?&quot;</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="266708587297238" type="Yes">
+                            <param id="0" name="Y">232</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="8448319340257031" type="No">
+                            <param id="0" name="Y">300</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="521278291516354" type="Co_Online_Button">
+                            <param id="0" name="X">278</param>
+                            <param id="1" name="Y">422</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="189706013565904" type="Co_NPC_Button">
+                            <param id="0" name="X">278</param>
+                            <param id="1" name="Y">422</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="5961573223840579" type="Single_Mode_Button">
+                            <param id="0" name="X">278</param>
+                            <param id="1" name="Y">422</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="1963974199705793">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7688576197733233" type="Touch">
+                    <param id="0" name="Object">Yes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8757556718210413" type="System">
+                    <param id="0" name="Layout">Cascacity</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4714776265163988">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7485160174881753" type="Touch">
+                    <param id="0" name="Object">No</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="5821874743471607" type="Yes">
+                    <param id="0" name="Y">584</param>
+                </action>
+                <action id="-2" name="Set Y" sid="6618894606466682" type="No">
+                    <param id="0" name="Y">652</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8156387928207049" type="choose_mode">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="4058352392321344" type="Co_Online_Button">
+                    <param id="0" name="X">222</param>
+                    <param id="1" name="Y">161</param>
+                </action>
+                <action id="-3" name="Set position" sid="2207252329927081" type="Co_NPC_Button">
+                    <param id="0" name="X">377</param>
+                    <param id="1" name="Y">161</param>
+                </action>
+                <action id="-3" name="Set position" sid="8440652842662284" type="Single_Mode_Button">
+                    <param id="0" name="X">299</param>
+                    <param id="1" name="Y">277</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="81711534772389">
+            <conditions>
+                <condition id="0" name="On function" sid="580329844203469" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7863447827651595" type="Welcome">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;welcome&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="4696352858463254" type="CreatedTxt">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;created&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="459855936824727" type="About">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;about&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="1493128158348244" type="About">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;about&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

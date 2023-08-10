@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Start sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="6372580510853872">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7945498281473988" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="55983039207062" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="8413383246939927" type="System">
+                    <param id="0" name="Variable">Before_Layout</param>
+                    <param id="1" name="Value">&quot;Start&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="400626117927459" type="Start_Text">
+                    <param id="0" name="Family name">&quot;Press Start 2P&quot;</param>
+                    <param id="1" name="CSS URL">&quot;PressStart2P.ttf&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7184985318373943">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="6605421125355346" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="7020692049610485" type="Audio">
+                            <param id="0" name="Audio file">Abertura</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Abertura&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1997347904404179" type="System">
+                            <param id="0" name="Seconds">121.0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="2994856136973794" type="Audio">
+                            <param id="0" name="Tag">&quot;Abertura&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="8789657896442794" type="System">
+                            <param id="0" name="Layout">Creators</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3518846199353304">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9464705770387558" type="Touch">
+                    <param id="0" name="Object">Login_Button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5269680059088842" type="System">
+                    <param id="0" name="Layout">Login</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6699254627134387">
+            <conditions>
+                <condition id="3" name="On touched object" sid="617585046454034" type="Touch">
+                    <param id="0" name="Object">Signup_Button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3718337836575527" type="System">
+                    <param id="0" name="Layout">Signup</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7666786471554884">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3815344574949975" type="Touch">
+                    <param id="0" name="Object">About_Button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8172527150119719" type="System">
+                    <param id="0" name="Layout">About</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7478658931098369">
+            <conditions>
+                <condition id="0" name="On function" sid="3362938313342005" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9550804127964126" type="Login">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;login&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="2180015264361365" type="Signup">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;signup&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="1657757453394336" type="About">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;about&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Phonemons sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="2366046444382955">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9214184887677189" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8947218405910415" type="System">
+                    <param id="0" name="Variable">Current_Layout</param>
+                    <param id="1" name="Value">LayoutName</param>
+                </action>
+                <action id="4" name="Set animation" sid="9460135245472991" type="Phonemon_Button">
+                    <param id="0" name="Animation">Phonemon_Button.Phonemon</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7020760485275577">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3910210570426979" type="Touch">
+                    <param id="0" name="Object">Phonemon_Button</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4427082784318704" type="Phonemon_Button">
+                    <param id="0" name="Instance variable">Phonemon</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Airplane&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="6460877279499579" type="Warn_Box" />
+                <action id="-2" name="Set Y" sid="4610859839023739" type="Warn_Box">
+                    <param id="0" name="Y">170</param>
+                </action>
+                <action id="-24" name="Move to top" sid="4566393112185918" type="Close_Warn" />
+                <action id="-2" name="Set Y" sid="9377569648478693" type="Close_Warn">
+                    <param id="0" name="Y">25</param>
+                </action>
+                <action id="-2" name="Set Y" sid="3515654953654382" type="Status_Button">
+                    <param id="0" name="Y">157</param>
+                </action>
+                <action id="-24" name="Move to top" sid="5564642346244849" type="Status_Button" />
+                <action id="-2" name="Set Y" sid="7000973770269015" type="Credits_Text">
+                    <param id="0" name="Y">129</param>
+                </action>
+                <action id="-24" name="Move to top" sid="5296009185192631" type="Credits_Text" />
+                <action id="-2" name="Set Y" sid="2598620146847622" type="ReleaseCall_Button">
+                    <param id="0" name="Y">225</param>
+                </action>
+                <action id="-24" name="Move to top" sid="8235953099035385" type="ReleaseCall_Button" />
+                <action id="-2" name="Set Y" sid="795602452682129" type="ReleaseCall_Text">
+                    <param id="0" name="Y">197</param>
+                </action>
+                <action id="-24" name="Move to top" sid="8637874592804496" type="ReleaseCall_Text" />
+            </actions>
+        </event-block>
+        <event-block sid="9964222736854377">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8061898532779853" type="Touch">
+                    <param id="0" name="Object">Close_Warn</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="6342078270234265" type="Status_Button">
+                    <param id="0" name="Y">503</param>
+                </action>
+                <action id="-2" name="Set Y" sid="2193194984757939" type="Credits_Text">
+                    <param id="0" name="Y">475</param>
+                </action>
+                <action id="-2" name="Set Y" sid="7945721235022375" type="ReleaseCall_Button">
+                    <param id="0" name="Y">571</param>
+                </action>
+                <action id="-2" name="Set Y" sid="9553913039027029" type="ReleaseCall_Text">
+                    <param id="0" name="Y">543</param>
+                </action>
+                <action id="-2" name="Set Y" sid="958258342783377" type="Close_Warn">
+                    <param id="0" name="Y">373</param>
+                </action>
+                <action id="-2" name="Set Y" sid="8023410916739012" type="Warn_Box">
+                    <param id="0" name="Y">516</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9491740754759527">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3907391575668549" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Yes&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="4920281073510028" type="ReleaseCall_Text">
+                    <param id="0" name="Text">&quot;Call&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6584879460997232">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="272390669161868" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;No&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2357821059736843" type="ReleaseCall_Text">
+                    <param id="0" name="Text">&quot;Release&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5430361189412443">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5735462334926526" type="Touch">
+                    <param id="0" name="Object">ReleaseCall_Button</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7065307743445639" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Yes&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6520350049800585" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Value">&quot;No&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4836482260424766" type="Bird">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2688130959917241">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5012489765044366" type="Touch">
+                    <param id="0" name="Object">ReleaseCall_Button</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1923511912840446" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;No&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="545271318154358" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Value">&quot;Yes&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2643177989877445" type="Bird">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

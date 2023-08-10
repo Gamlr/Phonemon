@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Common in-game sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="4249331887470296">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7946539290647398" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1201158120246462" type="System">
+                    <param id="0" name="Variable">City</param>
+                    <param id="1" name="Value">LayoutName</param>
+                </action>
+                <action id="0" name="Set text" sid="5431466859023858" type="City_Title">
+                    <param id="0" name="Text">City</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="6429666869703133" type="Bird">
+                    <param id="0" name="Pin to">Player</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="9347568941957672" type="Dewhale">
+                    <param id="0" name="Pin to">Player</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="5788632434576356" type="Player">
+                    <param id="0" name="X">67</param>
+                </action>
+                <action id="-1" name="Set X" sid="2886310861071645" type="Bird">
+                    <param id="0" name="X">66</param>
+                </action>
+                <action id="-1" name="Set X" sid="4299333545102993" type="Dewhale">
+                    <param id="0" name="X">41</param>
+                </action>
+                <action id="26" name="Set listener object" sid="4212043860923108" type="Audio">
+                    <param id="0" name="Object">Player</param>
+                </action>
+                <action id="1" name="Time counter" sid="3736666565769998" type="TimeManager">
+                    <param id="0" name="Label">&quot;Play_Time&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7177225288009333">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2258765945522019" type="System">
+                            <param id="0" name="Variable">Player_Flying</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Yes&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4487581388946885" type="Bird">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="7562809115525157" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="1824157766612704" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="9289239516284995" type="Player">
+                            <param id="0" name="Y">Bird.Y - -33</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="4275891485000952" type="Player" />
+                        <action id="-2" name="Set Y" sid="6183039414675179" type="Dewhale">
+                            <param id="0" name="Y">FlyPoint.Y - -30</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="5687859407227025" type="Dewhale" />
+                        <action id="0" name="Play" sid="7669529888719907" type="Audio">
+                            <param id="0" name="Audio file">Cry-7</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Bird2&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="7475757909095058" type="fly_button">
+                            <param id="0" name="Animation">&quot;Flying&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4935108106563321" type="Player">
+                            <param id="0" name="Animation">Webstorage.localvalue(&quot;Player_Gender&quot;)&amp;&quot;_Flying&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8589537168170602" type="Dewhale">
+                            <param id="0" name="Animation">&quot;Flying&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3960258120077851" type="Down_Button">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2367609074305708">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9363613156746843" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2409966344365576" type="Play_Time">
+                    <param id="0" name="Text">TimeManager.GetTimeValue(&quot;Play_Time&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4257902727911773">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="1477699507518971" type="Player" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1587931622796471" type="Audio">
+                    <param id="0" name="Audio file">Jump</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4981237898734687">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1465105929002644" type="Player">
+                    <param id="0" name="Object">Jumper_Detector</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4250761346032403" type="Audio">
+                    <param id="0" name="Audio file">Big Jump</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="4709828181066485" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="7354831998937895" type="Player">
+                    <param id="0" name="Jump strength">1200</param>
+                </action>
+                <action id="-16" name="Wait" sid="8019814805039157" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="3380255667604389" type="Player">
+                    <param id="0" name="Jump strength">440</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8124538565540809">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6028064513802572" type="Touch">
+                    <param id="0" name="Object">fly_button</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9291636328593648" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;No&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="2378465608289165" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="5708269285250009" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="9537512057637108" type="Player">
+                    <param id="0" name="Animation">Webstorage.localvalue(&quot;Player_Gender&quot;)&amp;&quot;_Releasing&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="947316671440424" type="System">
+                    <param id="0" name="Seconds">1.2</param>
+                </action>
+                <action id="-9" name="Set value" sid="2907950804210342" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Value">&quot;Yes&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7634664323997631" type="Bird">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="4071849897248586" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="7501138530237553" type="Player">
+                    <param id="0" name="Y">FlyPoint.Y - -21</param>
+                </action>
+                <action id="-24" name="Move to top" sid="9518363699082905" type="Player" />
+                <action id="4" name="Set animation" sid="5526807649067876" type="Player">
+                    <param id="0" name="Animation">Webstorage.localvalue(&quot;Player_Gender&quot;)&amp;&quot;_Flying&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="4885478699066084" type="Dewhale">
+                    <param id="0" name="Y">FlyPoint.Y - -30</param>
+                </action>
+                <action id="-24" name="Move to top" sid="1197988868181657" type="Dewhale" />
+                <action id="25" name="Play at object" sid="4038820209555576" type="Audio">
+                    <param id="0" name="Audio file">Cry-7</param>
+                    <param id="1" name="Loop">1</param>
+                    <param id="2" name="Volume">0</param>
+                    <param id="3" name="Object">Bird</param>
+                    <param id="4" name="Inner angle">360</param>
+                    <param id="5" name="Outer angle">360</param>
+                    <param id="6" name="Outer gain">0</param>
+                    <param id="7" name="Tag (optional)">&quot;Bird2&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="5173942808859844" type="fly_button">
+                    <param id="0" name="Animation">&quot;Flying&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7472099017928238" type="Dewhale">
+                    <param id="0" name="Animation">&quot;Flying&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3353006928414479" type="Down_Button">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="1446702783168489" type="Building_Block">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8081269608281525">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9673222142625393" type="Touch">
+                    <param id="0" name="Object">fly_button</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6782734467629501" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Yes&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8586670538109911">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="751632892611856" type="Bird">
+                            <param id="0" name="Object">FlyPoint</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="769404234448833" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="9229510461467787" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="67383850541003" type="Player">
+                            <param id="0" name="Animation">Webstorage.localvalue(&quot;Player_Gender&quot;)&amp;&quot;_Calling&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="213784650002468" type="System">
+                            <param id="0" name="Seconds">1.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6524626570630124" type="System">
+                            <param id="0" name="Variable">Player_Flying</param>
+                            <param id="1" name="Value">&quot;No&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="808651999197248" type="Bird">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="2888660741867232" type="Building_Block">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="5940398202639234" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="832478571051229" type="fly_button">
+                            <param id="0" name="Animation">&quot;Fly&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3604775957348562" type="Down_Button">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="7737288939992697" type="Audio">
+                            <param id="0" name="Tag">&quot;Bird2&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4309368478739953" type="Player">
+                            <param id="0" name="Animation">Webstorage.localvalue(&quot;Player_Gender&quot;)&amp;&quot;_Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="9825959102145035" type="Dewhale">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1011754857888122">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="4075946074600496" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8343008409836277" type="System">
+                            <param id="0" name="Variable">Warning</param>
+                            <param id="1" name="Value">&quot;Yes&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9863271674570935" type="Warn_Text">
+                            <param id="0" name="Text">&quot;Don&apos;t be suicidal. Land before collect your bird!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="6808693788532839" title="Platrans">
+            <sub-events>
+                <event-block sid="90328534985801">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="9595944309569279" type="Platrans" />
+                        <condition id="-4" name="Trigger once while true" sid="4899236459446525" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="4911376937659758" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="25" name="Play at object" sid="8776831239465334" type="Audio">
+                            <param id="0" name="Audio file">Cry-8</param>
+                            <param id="1" name="Loop">0</param>
+                            <param id="2" name="Volume">0</param>
+                            <param id="3" name="Object">Platrans</param>
+                            <param id="4" name="Inner angle">360</param>
+                            <param id="5" name="Outer angle">360</param>
+                            <param id="6" name="Outer gain">0</param>
+                            <param id="7" name="Tag (optional)">&quot;Transform&quot;</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="4498219645261328" type="Platrans">
+                            <param id="0" name="Mode">1</param>
+                            <param id="1" name="Effect">&quot;Swirl&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3337681967380282" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-27" name="Set effect enabled" sid="7752401774488462" type="Platrans">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Swirl&quot;</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="850073333186769" type="Platrans">
+                            <param id="0" name="Animation">Webstorage.localvalue(&quot;Player_Gender&quot;)&amp;&quot;_Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="6575163831285082" type="Audio">
+                            <param id="0" name="Tag">&quot;Transform&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="7088613789879289">
+                            <conditions>
+                                <condition id="-3" inverted="1" name="Is on-screen" sid="6003574591974987" type="Platrans" />
+                                <condition id="-4" name="Trigger once while true" sid="3710064091615942" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-27" name="Set effect enabled" sid="6591663242666168" type="Platrans">
+                                    <param id="0" name="Mode">0</param>
+                                    <param id="1" name="Effect">&quot;Swirl&quot;</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="6471711052070491" type="Platrans">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="182369799613931" title="Vibrations">
+            <sub-events>
+                <event-block any="1" sid="3558576366562571">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6424130169916005" type="Player">
+                            <param id="0" name="Object">Land_Grass</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="5886562659042668" type="Player">
+                            <param id="0" name="Object">Land_Earth</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="12" name="Vibrate" sid="5303174659517978" type="Browser">
+                            <param id="0" name="Pattern">&quot;500&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="8938699699469465" title="Action buttons">
+            <sub-events>
+                <event-block sid="2572839607366349">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="7313729166899256" type="Touch">
+                            <param id="0" name="Object">Start</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="5035538918727834" type="System">
+                            <param id="0" name="Layout">Smartphone</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8104873080205752">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="658291261664074" type="Touch">
+                            <param id="0" name="Object">R2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="5035651491239359" type="Player">
+                            <param id="0" name="Max Speed">220</param>
+                        </action>
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="3476722941443752" type="Player">
+                            <param id="0" name="Max Speed">390</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5554961690700714">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="2864485716007326" type="Touch">
+                            <param id="0" name="Object">R2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="6689717408174545" type="Player">
+                            <param id="0" name="Max Speed">90</param>
+                        </action>
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="1116952534431925" type="Player">
+                            <param id="0" name="Max Speed">200</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="8327295852704379">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="6254625340470138" type="Touch">
+                            <param id="0" name="Object">Up_Button</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="1820690192266724" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="9542892439139961" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="5351445206355548">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="4517961707834252" type="Touch">
+                            <param id="0" name="Object">Left_Button</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="5821160774308776" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="1764597171019491" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="6016484213750079" type="Dewhale">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="6837554516981638" type="Bird">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="2787282361734567" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="9074761863859132" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="5525097116014891">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="2302564901679601" type="Touch">
+                            <param id="0" name="Object">Right_Button</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="5225954263003892" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="1390793293607876" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="4006293912606968" type="Dewhale">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="1144506016796936" type="Bird">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="6297676593174933" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="3655946268786088" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="4045767947082297">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="442327074380406" type="Touch">
+                            <param id="0" name="Object">Down_Button</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="8943431000226981" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="9676273008303558" type="Player">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="4261293952153018">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="1431009829892788" type="Touch">
+                            <param id="0" name="Object">B</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="5339936841618728" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="3435858563380533" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="8180408014655531">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="853078321349963" type="Player">
+                    <param id="0" name="Object">eMoney</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="8437282551965413" type="System">
+                    <param id="0" name="Variable">eMoneys</param>
+                    <param id="1" name="Value">eMoney.Value</param>
+                </action>
+                <action id="-10" name="Set value" sid="4887775036927943" type="eMoney">
+                    <param id="0" name="Instance variable">Value</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7544844442681383">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="223746745049236" type="eMoney">
+                    <param id="0" name="Instance variable">Value</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3209050318824358" type="eMoney" />
+            </actions>
+        </event-block>
+        <event-block sid="2930310696530063">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6642231327015082" type="Touch">
+                    <param id="0" name="Object">Up_Button</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="1544726802145231" type="Player">
+                    <param id="0" name="Object">Door_Automatic</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8652853108398" type="System">
+                    <param id="0" name="Variable">Player_Flying</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;No&quot;</param>
+                </condition>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5144466184324233" type="Door_Automatic">
+                    <param id="0" name="Instance variable">Locked</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1507890533235319" type="Door_Automatic">
+                    <param id="0" name="Animation">&quot;Openning&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="1117885119988442" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="2418285559107639" type="System">
+                    <param id="0" name="Layout">Door_Automatic.Local</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

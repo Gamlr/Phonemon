@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>BuildChanges sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <variable constant="0" name="Device_Width" sid="7739543319899649" static="0" type="number">0</variable>
+        <variable constant="0" name="Device_Height" sid="2486381106033324" static="0" type="number">0</variable>
+        <event-block sid="5632987375835922">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2400898328630512" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2519894946045447" type="System">
+                    <param id="0" name="Variable">Before_Layout</param>
+                    <param id="1" name="Value">LayoutName</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7467638521306024">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4740296250031468" type="Touch">
+                    <param id="0" name="Object">Go_Button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="2565559143844592" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

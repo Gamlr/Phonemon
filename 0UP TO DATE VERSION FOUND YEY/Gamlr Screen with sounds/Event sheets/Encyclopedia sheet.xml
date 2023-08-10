@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Encyclopedia sheet</name>
+    <events>
+        <variable constant="0" name="Encyclopedia_Phonemon" sid="6410085787528536" static="0" type="number">1</variable>
+        <event-block sid="3062122947070248">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6768477036524454" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7132667888382882" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8708970715803931">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6060944602091321" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5640456868606025" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4982292151584703">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3968240243724433" type="Touch">
+                    <param id="0" name="Object">encyclopedia_next</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="7054259382696474" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="6736926278996401" type="Audio">
+                    <param id="0" name="Audio file">Touch</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7695401825973634">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2619943874623786" type="Touch">
+                    <param id="0" name="Object">encyclopedia_previous</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="7251166211946666" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="4559684612633419" type="Audio">
+                    <param id="0" name="Audio file">Touch</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4981271041538514">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9885628320994423" type="Touch">
+                    <param id="0" name="Object">Encyclopedia_Voice</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="9430066072710066" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">&quot;Cry-&quot; &amp; Encyclopedia_Phonemon</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5842835947795639">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4134944566978088" type="Touch">
+                    <param id="0" name="Object">arrowleft</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="279053688694976" type="System">
+                    <param id="0" name="Layout">Smartphone</param>
+                </action>
+                <action id="0" name="Play" sid="6756435708850256" type="Audio">
+                    <param id="0" name="Audio file">Touch</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9903515218090693">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3913407760555824" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2152796605383322" type="Encyclopedia_Name">
+                    <param id="0" name="Text">&quot;Encyclopedia - Bulball&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="4720687936697297" type="Encyclopedia_Number">
+                    <param id="0" name="Text">&quot;001&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="6754782747916849" type="encyclopedia_avatar">
+                    <param id="0" name="Animation">&quot;Bulball&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="4628644478523398" type="Encyclopedia_Footprint">
+                    <param id="0" name="Animation">&quot;Bulball&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="7050845010821817" type="Encyclopedia_Entry">
+                    <param id="0" name="Text">&quot;Descoberto em 2011 pelo Dr. Daniell e Dr. Marlon, foi o primeiro phonemon do mundo a ser descoberto pelo homem. Desde então ele vem sendo estudado.&quot; &amp; newline &amp;&quot;Quando estão passando por necessidades, eles afundam seus pés no solo, liberando suas raízes para então abrandar sua fome e/ou sede.&quot; &amp; newline &amp; &quot;Para poderem sofrer a metamorfose, eles precisam se enterrar no solo, somente deixando a ponta da cabeça na superfície.&quot; &amp; newline &amp; &quot;São geralmente dóceis e fiéis aos seus donos. A grande valentia deles permite com que arrisquem suas vidas para salvar quem precisa. Também divertidos e ótimos para brincar.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9237643137956964">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9142166461710822" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="7610048504907294" type="Encyclopedia_Name">
+                    <param id="0" name="Text">&quot;Encyclopedia - Waterain&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="5983219207079301" type="Encyclopedia_Number">
+                    <param id="0" name="Text">&quot;002&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="8755467511981629" type="encyclopedia_avatar">
+                    <param id="0" name="Animation">&quot;Waterain&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="1997195892008052" type="Encyclopedia_Footprint">
+                    <param id="0" name="Animation">&quot;Waterain&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="4042939207758586" type="Encyclopedia_Entry">
+                    <param id="0" name="Text">&quot;Após a surpresa científica que Bulball causou, é descoberto no centro de Cascacity o Waterain após uma longa e torrencial chuva. Após muito esforço, a espécime fora capturada em uma bacia.&quot; &amp; newline &amp; &quot;Quando vários Waterains se juntam, eles podem formar um corpo só, podendo se disfarçar em poças d&apos;água, córregos, rios, etc. Seu corpo liso e aquoso o torna difícil de ser capturado.&quot; &amp; newline &amp; &quot;Eles evitam a luz do sol, mas mesmo evaporados não perdem a vida, e podem retornar fácilmente em chuva. Seu corpo é constituido de 100% água.&quot; &amp; newline &amp; &quot;Sua reprodução ocorre quando dois deles se juntam e formam uma poça d&apos;água. Depois de 2 dias, surge então um ovo gelatinoso.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8643771802430211">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5674970102071693" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8499950709151712" type="Encyclopedia_Name">
+                    <param id="0" name="Text">&quot;Encyclopedia - Firember&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="1858581290437148" type="Encyclopedia_Number">
+                    <param id="0" name="Text">&quot;003&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="5397494515817335" type="encyclopedia_avatar">
+                    <param id="0" name="Animation">&quot;Firembe&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="8754858433053874" type="Encyclopedia_Footprint">
+                    <param id="0" name="Animation">&quot;Firember&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="8226962100292279" type="Encyclopedia_Entry">
+                    <param id="0" name="Text">&quot;Foi descoberto em 2011, sendo portado por um terrorista. Sabe-se que após explodir, ele continua vivo: apenas ferido e/ou desmaiado.&quot; &amp; newline &amp; &quot;Sua alimentação se constitui únicamente de combustíveis, pólvora e carvões. Eles também apreciam açúcar em seus alimentos.&quot; &amp; newline &amp; &quot;O fogo em seus pés amplia seus saltos, e permitem com que eles corram em alta velocidade. Seu fogo pode o transformar num poderoso foguete.&quot; &amp; newline &amp; &quot;Sua localização ainda é desconhecida, mas há cientistas que acreditam que eles podem viver em vulcões, pois a temperatura de seu corpo é muito alta.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="785568065447703">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2860288031096747" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1620612538753204" type="Encyclopedia_Name">
+                    <param id="0" name="Text">&quot;Encyclopedia - Dewhale&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="8015706488916191" type="Encyclopedia_Number">
+                    <param id="0" name="Text">&quot;004&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="2467191810499636" type="encyclopedia_avatar">
+                    <param id="0" name="Animation">&quot;Dewhale&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="2672741846192315" type="Encyclopedia_Footprint">
+                    <param id="0" name="Animation">&quot;Dewhale&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="437659922624306" type="Encyclopedia_Entry">
+                    <param id="0" name="Text">&quot;Foi o primeiro phonemon a ser descoberto em 2013. A espécime foi encontrada por pesquisadores enquanto meditava numa cachoeira. Desde então ele vem sendo estudado.&quot; &amp; newline &amp;&quot;Muito resistentes, conseguem sobreviver até em locais inóspitos. São resistentes à pobreza de oxigênio, à sede, ao calor e ao frio.&quot; &amp; newline &amp; &quot;São orgulhosos, e possuem um gênio forte. Determinados e valentes, difícilmente voltam atrás em uma decisão ou ficam com medo.&quot; &amp; newline &amp; &quot;Em sua fase adulta, são treinados e muito utilizados por bombeiros, por ser o phonemon com o melhor jato de água até hoje descoberto.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3522267970255173">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="970366959578382" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="6959122969615284" type="Encyclopedia_Name">
+                    <param id="0" name="Text">&quot;Encyclopedia - Dogleed&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="9227047596667975" type="Encyclopedia_Number">
+                    <param id="0" name="Text">&quot;005&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="8852873575771419" type="encyclopedia_avatar">
+                    <param id="0" name="Animation">&quot;Dogleed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="9857295949288752" type="Encyclopedia_Footprint">
+                    <param id="0" name="Animation">&quot;Dogleed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="3367104234876159" type="Encyclopedia_Entry">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="725253122343813">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1808296356143428" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9332975823055788" type="Encyclopedia_Name">
+                    <param id="0" name="Text">&quot;Encyclopedia - Flyoung&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="2658663896296009" type="Encyclopedia_Number">
+                    <param id="0" name="Text">&quot;???&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="6353581246978706" type="encyclopedia_avatar">
+                    <param id="0" name="Animation">&quot;Flyoung&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7133552569491978" type="Encyclopedia_Footprint">
+                    <param id="0" name="Animation">&quot;Flyoung&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="6330022188581739" type="Encyclopedia_Entry">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4837597456137343">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7735114028718405" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9710862734247802" type="Encyclopedia_Name">
+                    <param id="0" name="Text">&quot;Encyclopedia - Airplane&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="5820977150782293" type="Encyclopedia_Number">
+                    <param id="0" name="Text">&quot;???&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="9352980332704522" type="encyclopedia_avatar">
+                    <param id="0" name="Animation">&quot;Flyoung&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="2898472797605195" type="Encyclopedia_Footprint">
+                    <param id="0" name="Animation">&quot;Flyoung&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="3092354271320381" type="Encyclopedia_Entry">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1896509076184849">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9642017178858301" type="System">
+                    <param id="0" name="Variable">Encyclopedia_Phonemon</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5698170811554868" type="Encyclopedia_Name">
+                    <param id="0" name="Text">&quot;Encyclopedia - Platrans&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="2712038348159118" type="Encyclopedia_Number">
+                    <param id="0" name="Text">&quot;???&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="8945176603760104" type="encyclopedia_avatar">
+                    <param id="0" name="Animation">&quot;Platrans&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="6747927903231056" type="Encyclopedia_Footprint">
+                    <param id="0" name="Animation">&quot;Platrans&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set text" sid="4757121838449067" type="Encyclopedia_Entry">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Creators sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="5388920613265913">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9599216661244291" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9317839515865435" type="Audio">
+                    <param id="0" name="Audio file">Creators</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="1066861527311166" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7186981418350881" type="Creators_Text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="5455759398708892" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9479009696633184" type="System">
+                    <param id="0" name="Layout">BuildChanges</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="977840438895458">
+            <conditions>
+                <condition id="0" name="On function" sid="3482593213241119" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8266554903934348" type="BuildDescription">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;gamer_preview&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="8347174354725444" type="BuildWatermark">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;evaluation_build&quot;)&amp;Build</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

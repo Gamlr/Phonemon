@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Common sheet</name>
+    <events>
+        <variable constant="0" name="Battery" sid="6490604533987609" static="0" type="number">0</variable>
+        <variable constant="1" name="Build" sid="4309156805127056" static="0" type="text">6883</variable>
+        <variable constant="0" name="City" sid="7332708310201038" static="0" type="text">Worldwide Kindness</variable>
+        <variable constant="0" name="Before_Layout" sid="2007407500477474" static="0" type="text">Worldwide Kindness</variable>
+        <variable constant="0" name="UserID" sid="5809079842237195" static="0" type="number">0</variable>
+        <variable constant="0" name="Player_Flying" sid="3051734705270535" static="0" type="text">No</variable>
+        <variable constant="0" name="Warning" sid="9988526755006047" static="0" type="text">No</variable>
+        <variable constant="0" name="Current_Layout" sid="1506750188622742" static="0" type="text">Worldwide Kindness</variable>
+        <variable constant="0" name="eMoneys" sid="8002689203379876" static="0" type="number">0</variable>
+        <variable constant="0" name="isReady" sid="4980392452718888" static="0" type="text">false</variable>
+        <include>Clock sheet</include>
+        <event-block sid="6021948333875078">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3056856424877008" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2093656589890434" type="Player_Name">
+                    <param id="0" name="Text">Webstorage.localvalue(&quot;Username&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="9984064464518319" type="Version">
+                    <param id="0" name="Text">projectversion</param>
+                </action>
+                <action id="-9" name="Set value" sid="1270512169550338" type="System">
+                    <param id="0" name="Variable">Warning</param>
+                    <param id="1" name="Value">&quot;No&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="8722122675000601" type="Player">
+                    <param id="0" name="Animation">Webstorage.localvalue(&quot;Player_Gender&quot;)&amp;&quot;_Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="2398764270043855" type="Avatar">
+                    <param id="0" name="Animation">Webstorage.localvalue(&quot;Player_Gender&quot;)&amp;&quot;_Avatar&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6238069526155384">
+                    <conditions>
+                        <condition id="6" name="Compare key value (as text)" sid="9107656087693893" type="WebStorage">
+                            <param id="0" name="Key">&quot;Language_Changed&quot;</param>
+                            <param id="1" name="Text to compare">&quot;Yes&quot;</param>
+                            <param id="2" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="5564799733245918" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="9773351931393413" type="WebStorage">
+                            <param id="0" name="Key">&quot;language&quot;</param>
+                            <param id="1" name="Value">Webstorage.localvalue(&quot;language&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4182095096985231">
+                    <conditions>
+                        <condition id="6" inverted="1" name="Compare key value (as text)" sid="8711940355703232" type="WebStorage">
+                            <param id="0" name="Key">&quot;Language_Changed&quot;</param>
+                            <param id="1" name="Text to compare">&quot;Yes&quot;</param>
+                            <param id="2" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="3936279539827448" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="1297368367812395" type="WebStorage">
+                            <param id="0" name="Key">&quot;language&quot;</param>
+                            <param id="1" name="Value">&quot;en&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="334892751915016">
+                    <conditions />
+                    <actions>
+                        <action id="4" name="Set animation" sid="543276924047791" type="flag">
+                            <param id="0" name="Animation">self.language</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Request URL" sid="7788975537202699" type="AJAX">
+                            <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
+                            <param id="1" name="URL">&quot;strings.&quot; &amp; Webstorage.localvalue(&quot;language&quot;) &amp; &quot;.xml&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4313991250386364">
+            <conditions>
+                <condition id="0" name="On function" sid="7449365914857073" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2557859033380117" type="BuildDescription">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;gamer_preview&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="3186505338779525" type="BuildWatermark">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;evaluation_build&quot;)&amp;BUILD</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="128125540171451">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6182363126673724" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3742146873933761" type="System">
+                    <param id="0" name="Variable">Device_Width</param>
+                    <param id="1" name="Value">WindowWidth</param>
+                </action>
+                <action id="-9" name="Set value" sid="1321088632280835" type="System">
+                    <param id="0" name="Variable">Device_Height</param>
+                    <param id="1" name="Value">WindowHeight</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block any="1" sid="6732487996792031">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9741288735182942" type="System">
+                            <param id="0" name="Variable">Device_Width</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">690</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="6633707151577397" type="System">
+                            <param id="0" name="Variable">Device_Height</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">380</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="8764081289209935" type="System">
+                            <param id="0" name="Layout">Resolution</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5767952786354837">
+            <conditions>
+                <condition id="0" name="On any touch start" sid="2342008625614121" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="602487124747515" type="Audio">
+                    <param id="0" name="Audio file">Touch</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3424437507506303">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4777613423956309" type="Touch">
+                    <param id="0" name="Object">arrowleft</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6446127381623349" type="System">
+                    <param id="0" name="Variable">Before_Layout</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">&quot;Worldwide Kindness&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="4744546447484676" type="System">
+                    <param id="0" name="Layout">Before_Layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2100453154695684">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4664924315493313" type="System">
+                    <param id="0" name="Variable">Warning</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Yes&quot;</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="6707514116365951" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="3415472343835147" type="Audio">
+                    <param id="0" name="Audio file">Warning</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-24" name="Move to top" sid="5200748297010682" type="Warn_Box" />
+                <action id="-2" name="Set Y" sid="4031453048334441" type="Warn_Box">
+                    <param id="0" name="Y">170</param>
+                </action>
+                <action id="-24" name="Move to top" sid="7418086280268836" type="Warn_Text" />
+                <action id="-2" name="Set Y" sid="698239179756581" type="Warn_Text">
+                    <param id="0" name="Y">0</param>
+                </action>
+                <action id="-24" name="Move to top" sid="6118078344457697" type="Close_Warn" />
+                <action id="-2" name="Set Y" sid="1498004387015135" type="Close_Warn">
+                    <param id="0" name="Y">171</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5484376848627018">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4575955660164565" type="Touch">
+                    <param id="0" name="Object">Close_Warn</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="321599827808627" type="System">
+                    <param id="0" name="Variable">Current_Layout</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">&quot;Phonemons&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4020732505980551" type="System">
+                    <param id="0" name="Variable">Current_Layout</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">&quot;User&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9927346599318297" type="System">
+                    <param id="0" name="Variable">Warning</param>
+                    <param id="1" name="Value">&quot;No&quot;</param>
+                </action>
+                <action id="-2" name="Set Y" sid="3981853791599514" type="Warn_Box">
+                    <param id="0" name="Y">516</param>
+                </action>
+                <action id="-2" name="Set Y" sid="7709758854068997" type="Warn_Text">
+                    <param id="0" name="Y">346</param>
+                </action>
+                <action id="-2" name="Set Y" sid="3047771496831521" type="Close_Warn">
+                    <param id="0" name="Y">516</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="1175851901646998">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8976675272178203" type="Touch">
+                    <param id="0" name="Object">items_button</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="6750255810335433" type="Touch">
+                    <param id="0" name="Object">Co_Online_Button</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="4508433880924354" type="Touch">
+                    <param id="0" name="Object">Help</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="9995219914203183" type="Touch">
+                    <param id="0" name="Object">G2</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="1716746334853599" type="Touch">
+                    <param id="0" name="Object">Y</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="608827044149899" type="Touch">
+                    <param id="0" name="Object">Select</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="9552153990172363" type="Touch">
+                    <param id="0" name="Object">Status_Button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2799688366172285" type="System">
+                    <param id="0" name="Variable">Warning</param>
+                    <param id="1" name="Value">&quot;Yes&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="458973944276589" type="Warn_Text">
+                    <param id="0" name="Text">&quot;Sorry. This system has not been implemented, yet.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="3366210029400674" title="Language">
+            <sub-events>
+                <comment>load file into an XML object and call the &quot;updateText&quot; function</comment>
+                <event-block sid="2218898336694187">
+                    <conditions>
+                        <condition id="0" name="On completed" sid="9735434221406154" type="AJAX">
+                            <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Load" sid="6635162991354548" type="XML">
+                            <param id="0" name="XML">AJAX.LastData</param>
+                        </action>
+                        <action id="0" name="Call function" sid="2068280566774226" type="f">
+                            <param id="0" name="Name">&quot;updateText&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>the &quot;getText&quot; function takes the string id as a parameter and returns the correct string from the XML file</comment>
+                <event-block sid="1029767389110483">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6835148960053251" type="f">
+                            <param id="0" name="Name">&quot;getText&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="9875097331599928" type="f">
+                            <param id="0" name="Value">XML.StringValue(&quot;/strings/string[@id=&apos;&quot; &amp; f.Param(0) &amp; &quot;&apos;]/text()&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

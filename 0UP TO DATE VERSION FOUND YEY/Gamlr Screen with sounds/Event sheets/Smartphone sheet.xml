@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Smartphone sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="3341045825619367">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="460422588076649" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="682435507796468" type="System">
+                    <param id="0" name="Variable">Current_Layout</param>
+                    <param id="1" name="Value">LayoutName</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2715882401674988">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1196457047585746" type="Touch">
+                    <param id="0" name="Object">Play_Button</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2100452399629415">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="3075782911022759" type="Network_Icon">
+                            <param id="0" name="Animation">&quot;Online&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4981753292048108">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5994671515675277" type="System">
+                                    <param id="0" name="Variable">City</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;Worldwide Kindness&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-25" name="Go to layout (by name)" sid="124679331116558" type="System">
+                                    <param id="0" name="Layout">City</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3594930720128038">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="1442725225348222" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="4821184884239991" type="System">
+                                    <param id="0" name="Layout">Start</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9797196754612783">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2841590091314616" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7380618128716208" type="System">
+                            <param id="0" name="Variable">Warning</param>
+                            <param id="1" name="Value">&quot;Yes&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="89779197251168" type="Warn_Text">
+                            <param id="0" name="Text">&quot;You cannot play Phonemon being offline! Please wait for the connection to reestablish.&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="513152865523405">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5904790379947826" type="Touch">
+                    <param id="0" name="Object">Encyclopedia</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7287433934479672" type="System">
+                    <param id="0" name="Layout">Encyclopedia</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6134728007374998">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5195674792718415" type="Touch">
+                    <param id="0" name="Object">phonemons_button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8067374373219106" type="System">
+                    <param id="0" name="Layout">Phonemons</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4318167070295617">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9370079167075064" type="Touch">
+                    <param id="0" name="Object">Phonemon_Button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3025809524934652" type="System">
+                    <param id="0" name="Layout">User</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3824476816844644">
+            <conditions>
+                <condition id="3" name="On touched object" sid="724675832244436" type="Touch">
+                    <param id="0" name="Object">settings_button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9100334305300122" type="System">
+                    <param id="0" name="Layout">Settings</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

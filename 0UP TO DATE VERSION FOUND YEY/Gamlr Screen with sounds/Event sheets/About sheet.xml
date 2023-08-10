@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>About sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="8340071846233195">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4299252699428857" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4960839975116714" type="System">
+                    <param id="0" name="Variable">Before_Layout</param>
+                    <param id="1" name="Value">&quot;Start&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="1489502829267548" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="2774924991688544">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3796580801841932" type="Touch">
+                    <param id="0" name="Object">Credits</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1800422408952054" type="System">
+                    <param id="0" name="Layout">Credits</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5708768635955096">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1143873857194696" type="Touch">
+                    <param id="0" name="Object">BuildChanges_Button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9767783724347042" type="System">
+                    <param id="0" name="Layout">BuildChanges</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6880132802068341">
+            <conditions>
+                <condition id="0" name="On function" sid="4216065705330245" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5120498867115536" type="HeadingTxt">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;about&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="9583712769811862" type="CreatedTxt">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;created&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="3765786352426507" type="About">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;about&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="5303434256292706" type="About">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;about&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

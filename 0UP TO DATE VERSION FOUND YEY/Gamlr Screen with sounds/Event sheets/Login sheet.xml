@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Login sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="6517147642541083">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3576119751330675" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="6805929366563478" type="Audio">
+                    <param id="0" name="Tag">&quot;Abertura&quot;</param>
+                </action>
+                <action id="6" name="Set focused" sid="4825027596852876" type="ID_Box" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="9274019919176461" title="Login inputs">
+            <sub-events>
+                <event-block any="1" sid="540655972634728">
+                    <conditions>
+                        <condition id="1" name="On text changed" sid="9464185109955618" type="ID_Box" />
+                        <condition id="1" name="On text changed" sid="3764496821714143" type="Password_Box" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="6869736645479976">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="1084210169779651" type="ID_Box">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                    <param id="1" name="Case">0</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="3744156064955844" type="Password_Box">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                    <param id="1" name="Case">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="4416103148385015" type="EnterButton">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9896949583459472">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="9004281453115152" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="2081167123196591" type="EnterButton">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9761892217624511">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="9606197141655439" type="Touch">
+                            <param id="0" name="Object">EnterButton</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="5336382355733915" type="EnterButton" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6128393149786217">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="6479870684426274" type="ID_Box">
+                                    <param id="0" name="Text">Webstorage.localvalue(&quot;Username&quot;)</param>
+                                    <param id="1" name="Case">0</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="904647298086996" type="Password_Box">
+                                    <param id="0" name="Text">Webstorage.localvalue(&quot;Password&quot;)</param>
+                                    <param id="1" name="Case">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="352681757905626" type="System">
+                                    <param id="0" name="Layout">Cascacity</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7457062354035466">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="885229482022907" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="3994632103331091" type="System">
+                                    <param id="0" name="Variable">Warning</param>
+                                    <param id="1" name="Value">&quot;Yes&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="4899717900474727" type="Warn_Text">
+                                    <param id="0" name="Text">&quot;Oh! Wrong username/password.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="2060866594132053">
+            <conditions>
+                <condition id="0" name="On function" sid="7812694345727697" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9041039771563153" type="HeadingTxt">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;login&quot;)</param>
+                </action>
+                <action id="1" name="Set placeholder" sid="4389656361744803" type="ID_Box">
+                    <param id="0" name="Placeholder">f.Call(&quot;getText&quot;, &quot;username&quot;)</param>
+                </action>
+                <action id="1" name="Set placeholder" sid="7936296591666658" type="Password_Box">
+                    <param id="0" name="Placeholder">f.Call(&quot;getText&quot;, &quot;password&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

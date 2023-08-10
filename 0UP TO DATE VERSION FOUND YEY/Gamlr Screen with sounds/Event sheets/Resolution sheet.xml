@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Resolution sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <event-block sid="5779422696454061">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="853914959889972" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3807783526498512" type="System">
+                    <param id="0" name="Variable">Before_Layout</param>
+                    <param id="1" name="Value">LayoutName</param>
+                </action>
+                <action id="5" name="Set web font" sid="4091263592349189" type="Start_Text">
+                    <param id="0" name="Family name">&quot;Press Start 2P&quot;</param>
+                    <param id="1" name="CSS URL">&quot;PressStart2P.ttf&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6442807862164429">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="3291956692330684" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="2835567211451825" type="Audio" />
+                        <action id="0" name="Play" sid="3151266797666202" type="Audio">
+                            <param id="0" name="Audio file">Buzina</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Buzina&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="6241912165795186">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4577918138016033" type="System">
+                    <param id="0" name="Variable">Device_Width</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">690</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5861891309304422" type="System">
+                    <param id="0" name="Variable">Device_Height</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">380</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="8599406479944461" type="Audio">
+                    <param id="0" name="Tag">&quot;Buzina&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="2183223473649242" type="System">
+                    <param id="0" name="Layout">Creators</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8492072253077891">
+            <conditions>
+                <condition id="0" name="On function" sid="994877669568001" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1187812667236978" type="resolution_error">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;resolution_error&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="3694262640417745" type="phonemon_canrun">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;phonemon_canrun&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="7385947860356427" type="for_desktopbuilds">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;for_desktopbuilds&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

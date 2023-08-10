@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Route 1 sheet</name>
+    <events>
+        <include>Common in-game sheet</include>
+        <event-block sid="8978883712781876">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5122102242104967" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Entrance Transition" sid="8309514719493253" type="LayoutTransition">
+                    <param id="0" name="Transition">15</param>
+                    <param id="1" name="Duration">-1</param>
+                    <param id="2" name="Delay">-1</param>
+                </action>
+                <action id="-9" name="Set value" sid="4749732178708543" type="System">
+                    <param id="0" name="Variable">Before_Layout</param>
+                    <param id="1" name="Value">LayoutName</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8672721422532998">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2492513568234367" type="Player">
+                    <param id="0" name="Object">City_Link</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Exit Transition" sid="1421239352560685" type="LayoutTransition">
+                    <param id="0" name="Transition">15</param>
+                    <param id="1" name="Duration">-1</param>
+                    <param id="2" name="Delay">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="472415304298227">
+            <conditions>
+                <condition id="0" name="Is Transition ended" sid="1942461292395542" type="LayoutTransition" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4707582031942378">
+                    <conditions>
+                        <condition id="1" name="Is finished transition Name" sid="937099782844443" type="LayoutTransition">
+                            <param id="0" name="Transition">31</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5684978409290783" type="System">
+                            <param id="0" name="Variable">isReady</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                        <action id="-43" name="Go to next/previous layout" sid="3110118591948177" type="System">
+                            <param id="0" name="Which">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8784896093825342">
+                    <conditions>
+                        <condition id="1" name="Is finished transition Name" sid="3102755740183603" type="LayoutTransition">
+                            <param id="0" name="Transition">29</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7991544568886813" type="System">
+                            <param id="0" name="Variable">isReady</param>
+                            <param id="1" name="Value">&quot;true&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

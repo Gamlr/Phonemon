@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="0">Creators</layout>
+        <layout order="2">Drug Store</layout>
+        <event-sheet order="1">Common sheet</event-sheet>
+        <event-sheet order="3">Drug Store sheet</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Buttons/" />
+        <folder expanded="1" path="object-folder/Text/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/Lands/" />
+        <folder expanded="1" path="layout-folder/Places/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/Lands/" />
+        <folder expanded="0" path="event-folder/Places/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/About_Button/" />
+        <folder expanded="1" path="animation-folder/arrowleft/" />
+        <folder expanded="1" path="animation-folder/B/" />
+        <folder expanded="1" path="animation-folder/Boy/" />
+        <folder expanded="1" path="animation-folder/Co_NPC_Button/" />
+        <folder expanded="1" path="animation-folder/Co_Online_Button/" />
+        <folder expanded="1" path="animation-folder/Credits/" />
+        <folder expanded="1" path="animation-folder/Down_Button/" />
+        <folder expanded="1" path="animation-folder/Encyclopedia/" />
+        <folder expanded="1" path="animation-folder/EnterButton/" />
+        <folder expanded="1" path="animation-folder/G2/" />
+        <folder expanded="1" path="animation-folder/Girl/" />
+        <folder expanded="1" path="animation-folder/Go_Button/" />
+        <folder expanded="1" path="animation-folder/Help/" />
+        <folder expanded="1" path="animation-folder/items_button/" />
+        <folder expanded="1" path="animation-folder/Left_Button/" />
+        <folder expanded="1" path="animation-folder/Login_Button/" />
+        <folder expanded="1" path="animation-folder/No/" />
+        <folder expanded="1" path="animation-folder/phonemons_button/" />
+        <folder expanded="1" path="animation-folder/R2/" />
+        <folder expanded="1" path="animation-folder/Right_Button/" />
+        <folder expanded="1" path="animation-folder/Select/" />
+        <folder expanded="1" path="animation-folder/settings_button/" />
+        <folder expanded="1" path="animation-folder/Signup_Button/" />
+        <folder expanded="1" path="animation-folder/Single_Mode_Button/" />
+        <folder expanded="1" path="animation-folder/Start/" />
+        <folder expanded="1" path="animation-folder/Up_Button/" />
+        <folder expanded="1" path="animation-folder/Y/" />
+        <folder expanded="1" path="animation-folder/Yes/" />
+        <folder expanded="1" path="animation-folder/Close_Warn/" />
+        <folder expanded="1" path="animation-folder/Phonemon_Button/" />
+        <folder expanded="1" path="animation-folder/Play_Button/" />
+        <folder expanded="1" path="animation-folder/Distinctives_Button/" />
+        <folder expanded="1" path="animation-folder/Maps_Button/" />
+        <folder expanded="1" path="animation-folder/Calendar_Button/" />
+        <folder expanded="1" path="animation-folder/Save_Button/" />
+        <folder expanded="1" path="animation-folder/Status_Button/" />
+        <folder expanded="1" path="animation-folder/ReleaseCall_Button/" />
+        <folder expanded="1" path="animation-folder/BuildChanges_Button/" />
+        <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/Land_Grass/" />
+        <folder expanded="1" path="animation-folder/Land_Earth/" />
+        <folder expanded="1" path="animation-folder/L/" />
+        <folder expanded="1" path="animation-folder/R/" />
+        <folder expanded="1" path="animation-folder/A/" />
+        <folder expanded="1" path="animation-folder/G/" />
+        <folder expanded="1" path="animation-folder/M/" />
+        <folder expanded="1" path="animation-folder/Sky_Background/" />
+        <folder expanded="1" path="animation-folder/User_Label/" />
+        <folder expanded="1" path="animation-folder/Password_Label/" />
+        <folder expanded="1" path="animation-folder/Background/" />
+        <folder expanded="1" path="animation-folder/Avatar/" />
+        <folder expanded="1" path="animation-folder/Warn_Box/" />
+        <folder expanded="1" path="animation-folder/Jumper/" />
+        <folder expanded="1" path="animation-folder/Jumper_Detector/" />
+        <folder expanded="1" path="animation-folder/City_Title_Box/" />
+        <folder expanded="1" path="animation-folder/Cascacity_icon/" />
+        <folder expanded="1" path="animation-folder/Routes_icon/" />
+        <folder expanded="1" path="animation-folder/CentralPark_Tower/" />
+        <folder expanded="1" path="animation-folder/Collision/" />
+        <folder expanded="1" path="animation-folder/Avatar_Frame/" />
+        <folder expanded="1" path="animation-folder/Avatar_Border/" />
+        <folder expanded="1" path="animation-folder/PhonemonBank_Tower/" />
+        <folder expanded="1" path="animation-folder/DrugStorePP_Tower/" />
+        <folder expanded="1" path="animation-folder/fly_button/" />
+        <folder expanded="1" path="animation-folder/Phonemon/" />
+        <folder expanded="1" path="animation-folder/Version2/" />
+        <folder expanded="1" path="animation-folder/Dewhale/" />
+        <folder expanded="1" path="animation-folder/Text_Box/" />
+        <folder expanded="1" path="animation-folder/Bird/" />
+        <folder expanded="1" path="animation-folder/Background_Contrast/" />
+        <folder expanded="1" path="animation-folder/Bulball/" />
+        <folder expanded="1" path="animation-folder/City_Link/" />
+        <folder expanded="1" path="animation-folder/Platrans/" />
+        <folder expanded="1" path="animation-folder/Travesseiro/" />
+        <folder expanded="1" path="animation-folder/Return_Point/" />
+        <folder expanded="1" path="animation-folder/Past/" />
+        <folder expanded="1" path="animation-folder/P/" />
+        <folder expanded="1" path="animation-folder/Rock/" />
+        <folder expanded="1" path="animation-folder/Boulder/" />
+        <folder expanded="1" path="animation-folder/encyclopedia_avatar/" />
+        <folder expanded="1" path="animation-folder/encyclopedia_previous/" />
+        <folder expanded="1" path="animation-folder/encyclopedia_background/" />
+        <folder expanded="1" path="animation-folder/encyclopedia_next/" />
+        <folder expanded="1" path="animation-folder/Encyclopedia_Footprint/" />
+        <folder expanded="1" path="animation-folder/flag/" />
+        <folder expanded="1" path="animation-folder/outline/" />
+        <folder expanded="1" path="animation-folder/Network_Icon/" />
+        <folder expanded="1" path="animation-folder/Friend_1/" />
+        <folder expanded="1" path="animation-folder/Friend_2/" />
+        <folder expanded="1" path="animation-folder/Land_Block/" />
+        <folder expanded="1" path="animation-folder/Count_Badge/" />
+        <folder expanded="1" path="animation-folder/Battery_Icon/" />
+        <folder expanded="1" path="animation-folder/Building_Block/" />
+        <folder expanded="1" path="animation-folder/Door_Automatic/" />
+        <folder expanded="1" path="animation-folder/Casal/" />
+        <folder expanded="1" path="animation-folder/eMoney/" />
+    </folders-expanded>
+</c2uistate>
